@@ -1,0 +1,11 @@
+.player-btn-img {
+  height: 60%;
+  top: 0;
+  bottom: 0;
+  display: block;
+  margin: auto;
+}
+
+.player-btn {
+  vertical-align: top;
+}
