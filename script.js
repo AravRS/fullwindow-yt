@@ -1,16 +1,14 @@
 addButton();
-// const videoLink = window.location.toString();
 
 function addButton() {
-  var theDiv = document.getElementsByClassName("ytp-right-controls")[0];
+  var theDiv = document.querySelector(".ytp-right-controls");
 
   const newButton = document.createElement("button");
   newButton.draggable = false;
   newButton.id = "fullWindowBtn";
   newButton.classList.add("player-btn");
   newButton.classList.add("ytp-button");
-  newButton.title = "fullWindowBtn";
-  //   newButton.setAttribute("aria-label", "fullWindowBtn");
+  newButton.title = "Fullwindow";
   newButton.addEventListener("click", fullWindowHandle);
 
   const newButtonIcon = document.createElement("img");
@@ -23,9 +21,8 @@ function addButton() {
 }
 
 function fullWindowHandle() {
-  window.location.href = `https://www.youtube.com/embed/${getVideoID(
-    window.location.toString()
-  )}`;
+  window.location.href =
+    "https://www.youtube.com/embed/" + getVideoID(window.location.toString());
 }
 
 function getVideoID(url) {
