@@ -4,7 +4,6 @@
   "description": "Made YouTube videos Fullwindow size.",
   "version": "0.0.1",
   "icons": {
-    // Icons from https://icons8.com
     "96": "icons/fwyt-96-red.png",
     "48": "icons/fwyt-48-red.png"
   },
