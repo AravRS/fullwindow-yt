@@ -1,19 +1,20 @@
 {
   "manifest_version": 2,
   "name": "Full Window YT",
+  "description": "Made YouTube videos Fullwindow size.",
   "version": "0.0.1",
   "icons": {
-    "96": "fwyt-96-red.png",
-    "48": "fwyt-48-red.png"
+    // Icons from https://icons8.com
+    "96": "icons/fwyt-96-red.png",
+    "48": "icons/fwyt-48-red.png"
   },
   "content_scripts": [
     {
+      "run_at": "document_end",
       "matches": ["*://*.youtube.com/watch*"],
       "js": ["script.js"],
-      "css": ["styles.css"]
+      "css": ["styles.css"],
+      "all_frames": true
     }
-  ],
-  "browser_action": {
-    "default_icon": "fwyt-48-red.png"
-  }
+  ]
 }
